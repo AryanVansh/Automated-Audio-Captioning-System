@@ -26,3 +26,34 @@ dataset_reduced/ ├── audio/ │ ├── audio_file_1.wav │ ├── a
 ```bash
 git clone https://github.com/your-username/audio-captioning-aac.git
 cd audio-captioning-aac
+
+2. Create a Virtual Environment (Optional)
+
+python -m venv venv
+source venv/bin/activate  # For Linux/Mac
+# OR
+venv\Scripts\activate  # For Windows
+
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+4. NLTK Setup (for BLEU Score)
+
+import nltk
+nltk.download('punkt')
+
+📦 Requirements
+
+Main dependencies:
+
+torch
+torchaudio
+transformers
+torchvision
+pandas
+h5py
+nltk
+You can install them manually or use:
+pip install torch torchaudio torchvision transformers pandas h5py nltk
